@@ -44,8 +44,6 @@ app.post("/postUrlFile", upload.single('image'), async (req, res)=>{
 
     const result = await axios.post("https://api.trace.moe/search", formData)
     const data = result.data
-
-    console.log(data)
     
     res.render("index", {data: data})
 })
