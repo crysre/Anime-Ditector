@@ -1,0 +1,63 @@
+body{
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+#myForm{
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+}
+
+.content{
+  margin-top: 50px;
+  height: 250px;
+  width: 600px;
+  background-color: black;
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.headerDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  color: white;
+}
+
+.contentDiv{
+  height: 200px;
+  display: flex;
+}
+
+.cD1{
+  flex: 3;
+}
+
+.cD2{
+  flex: 1;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.submit{
+  height: 2rem;
+  width: 5rem;
+  background-color: rgb(0, 253, 42);
+  border-radius: 25px;
+}
+
+.submit:hover{
+  box-shadow: 5px 6px 5px 0 rgb(0, 0, 0);
+
+}
+
