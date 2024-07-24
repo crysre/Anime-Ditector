@@ -1,12 +1,14 @@
 body{
   background-color: bisque;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   justify-self: center;
 }
 
 #myForm{
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   padding-top: 50px;
@@ -61,3 +63,29 @@ ul{
 
 }
 
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    margin-top: 20px;
+    height: 400px;
+  }
+  .submit{
+    margin-top: 10px;
+  }
+  .contentDiv {
+    flex-direction: column;
+  }
+
+  .cD1, .cD2 {
+    min-width: 100%;
+    flex: 1;
+  }
+
+  #myForm {
+    flex-direction: column;
+  }
+
+  .cD2 video {
+    max-width: 100%; /* Ensure video scales to fit within container */
+  }
+}
